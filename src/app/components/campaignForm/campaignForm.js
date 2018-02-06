@@ -30,6 +30,10 @@ export default class CamapignForm extends Component {
 
     let reader = new FileReader();
     let file = e.target.files[0];
+    console.log(e.target.files);
+    const files = e.target.files
+    console.log(files[0]);
+    // console.log(reader);
 
     reader.onloadend = () => {
       this.setState({
@@ -47,6 +51,8 @@ export default class CamapignForm extends Component {
     if (imagePreviewUrl) {
         $imagePreview = (<img src={imagePreviewUrl} />);
     }
+
+    console.log(this.state);
 
     return (
       <div>
@@ -81,10 +87,6 @@ export default class CamapignForm extends Component {
               <button onClick={this.handleTestButton}>test button</button>
           </div> {/* .col-lg-4 */}
           <div className="col-lg-8">
-            <pre>
-              <p>testing data mode, nanti dihapus</p>
-              {JSON.stringify(this.state, null, 4)}
-            </pre>
             <h3>title: {this.state.campaignTitle}</h3>
             <p>{this.state.description}</p>
              {$imagePreview}

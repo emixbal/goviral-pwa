@@ -53,6 +53,11 @@ const Header = (props) => {
               Login
             </Link>
           </li>
+          <li className="nav-item">
+            <Link className={classNames("nav-link", {active: props.url === "/campaign"})} to="/campaign">
+              Create Campaign
+            </Link>
+          </li>
           </ul>
       </div>
     </nav>
