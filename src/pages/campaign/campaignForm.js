@@ -1,5 +1,5 @@
-import CampaignForm from "../app/components/campaignForm";
-import DefaultLayout from "../app/components/layout"
+import CampaignForm from "../../app/components/campaignForm";
+import DefaultLayout from "../../app/components/layout"
 
 const routes = [
   {

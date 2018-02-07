@@ -2,7 +2,7 @@ import React, {Component} from "react";
 import Link from "pawjs/src/components/link";
 
 
-export default class Campaign extends Component {
+export default class CreateCampaign extends Component {
   constructor(props) {
       super(props);
       this.state = {

@@ -7,8 +7,11 @@ import * as Features from "./pages/features";
 import * as Testimonial from "./pages/testimonial";
 import * as About from "./pages/about";
 import * as Login from "./pages/login";
-import * as Campaign from "./pages/campaign";
-import * as CampaignForm from "./pages/campaignForm";
+// import * as Campaign from "./pages/campaign";  Campaign,
+// import * as CampaignForm from "./pages/campaignForm"; CampaignForm,
+
+import * as CreateCampaign from "./pages/campaign/createCampaign";
+import * as CampaignForm from "./pages/campaign/campaignForm";
 
 export default configureRoutes([
   Home,
@@ -18,6 +21,6 @@ export default configureRoutes([
   Testimonial,
   About,
   Login,
-  Campaign,
+  CreateCampaign,
   CampaignForm
 ]);
